@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <node pkg="lasr_pcl" type="transform_cloud_server" name="transform_cloud_server" respawn="true" output="screen"/>
+    <node pkg="lasr_pcl" type="object_approach_nav_point_server" name="object_approach_nav_point_server" respawn="true" output="screen"/>
+    <node pkg="lasr_pcl" type="cylinder_from_cloud_server" name="cylinder_from_cloud_server" respawn="true" output="screen"/>
+    <node pkg="lasr_object_detection_yolo" type="object_detection_server.py" name="yolo_object_detection_server" respawn="true" output="screen"/>
+    <!-- <node pkg="lasr_pcl" type="cloud_from_detection_server" name="cloud_from_detection_server" respawn="true" output="screen"/> -->
+    <node pkg="lasr_moveit" type="manipulation_server" name="manipulation_server" respawn="true" output="screen"/>
+    <node pkg="jeff_segment_objects" type="jeff_segment_objects_node" name="segment_objects_server" respawn="true" output="screen"/>
+
+    <rosparam command="load" file="$(find fy16m3aa)/config/motions.yaml" />
+    <rosparam command="load" file="$(find fy16m3aa)/config/simulation_living_room.yaml" />
+</launch>
