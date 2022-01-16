@@ -1,6 +1,6 @@
 <h2> About this project </h2>
 
-This repository contains the base package of the cleanup challenge files. Each of the ROS services developed for this project has been pushed to its appropriate package under the sensible-robots packages for the University of Leeds LASR team.
+This repository contains the base package of the ROBOCUP 2020 cleanup challenge files. Each of the ROS services developed for this project has been pushed to its appropriate package under the sensible-robots packages for the University of Leeds LASR team.
 
 <h2> Setup  </h2>
 
