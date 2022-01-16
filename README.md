@@ -36,3 +36,6 @@ Then run the base program node:
 ~~~
 rosrun cleanup_challenge cleanup.py
 ~~~
+
+<h2> Project Videos </h2>
+https://www.youtube.com/playlist?list=PL8H63fbCluCkGNC7cjesS343j_AxikJh6
